@@ -1,31 +1,44 @@
-import { useState } from "react";
-import "./Navbar.css";
+import { useState, useContext } from "react"
+import { ThemeContext } from "../../contexts/ThemeContext"
+import "./Navbar.css"
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
+  const { themeName, toggleTheme } = useContext(ThemeContext)
 
   return (
-    <header className="nav-header">
+    <header className={`nav-header ${themeName}`}>
       <nav className="navbar">
         <h1 className="logo">grind</h1>
 
         
-        <button
-          className="hamburger"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          ☰
-        </button>
+        <div className="nav-actions">
+        
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+          >
+            {themeName === "dark" ? "🌙" : "☀️"}
+          </button>
 
-       
+         
+          <button
+            className="hamburger"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
+        </div>
+
+   
         <ul className={`nav-links ${open ? "open" : ""}`}>
-          
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#dashboard" onClick={() => setOpen(false)}>Dashboard</a></li>
+          <li><a href="#blog" onClick={() => setOpen(false)}>Blog</a></li>
+          <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
         </ul>
       </nav>
     </header>
-  );
+  )
 }

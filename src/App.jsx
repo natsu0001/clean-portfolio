@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useContext } from 'react'
 
 import Header from './components/Header/Header'
 import About from './components/About/About'
@@ -7,23 +7,22 @@ import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contract'
 import Footer from './components/Footer/Footer'
 
+import { ThemeContext } from './contexts/ThemeContext'
+
 function App() {
-  const [count, setCount] = useState(0)
+  const { themeName } = useContext(ThemeContext)
 
   return (
-    <>
-      <div>
-        <Header />
-
-        <main>
-          <About />
-          <Projects />
-          <Skills />
-          <Contact />
-          <Footer />
-        </main>
-      </div>
-    </>
+    <div className={themeName}>
+      <Header />
+      <main>
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   )
 }
 
