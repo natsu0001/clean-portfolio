@@ -1,0 +1,28 @@
+/* index.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* Theme */
+.light {
+  background-color: #ffffff;
+  color: #111;
+}
+
+.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}

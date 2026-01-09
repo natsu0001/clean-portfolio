@@ -1,0 +1,22 @@
+/* App.css */
+
+.section {
+  padding: 4rem 1.5rem;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn--outline {
+  border: 1px solid currentColor;
+  background: transparent;
+}
