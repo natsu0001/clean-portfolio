@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <header className={`nav-header ${themeName}`}>
       <nav className="navbar">
-        <h1 className="logo">grind</h1>
+        <h1 className="logo"></h1>
 
         
         <div className="nav-actions">
