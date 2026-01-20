@@ -1,5 +1,5 @@
 import ProjectContainer from '../ProjectContainer/ProjectContainer'
-
+import './Projects.css' ;
 const Projects = () => {
   return (
     <section id="projects" className="section projects">

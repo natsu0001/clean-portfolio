@@ -1,3 +1,5 @@
+import "./ProjectContainer.css";
+
 const ProjectContainer = () => {
   return (
     <div className="project">

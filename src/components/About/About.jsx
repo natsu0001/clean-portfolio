@@ -31,7 +31,7 @@ const About = () => {
         </a>
 
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/natsu0001"
           aria-label="github"
           className="link link--icon"
         >
@@ -39,7 +39,7 @@ const About = () => {
         </a>
 
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="www.linkedin.com/in/abhishek-talukdar-890b13330"
           aria-label="linkedin"
           className="link link--icon"
         >
