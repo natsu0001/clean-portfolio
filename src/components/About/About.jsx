@@ -5,7 +5,7 @@ const About = () => {
     <div className="about center">
       <div className="about__header">
         <img
-          src="images/profile.jpg"
+          src="/me.png"
           alt="Abhishek Talukdar"
           className="about__picture"
         />
