@@ -14,7 +14,7 @@ function App() {
   const { themeName } = useContext(ThemeContext)
 
   return (
-    <div className={themeName}>
+    <div className={`app ${themeName}`}>
       <Header />
       <main>
         <About />
