@@ -31,9 +31,9 @@ export default function Navbar() {
             ☰
           </button>
           <ul className={`nav-links ${open ? "open" : ""}`}>
-          <li><a href="#dashboard" onClick={() => setOpen(false)}>Dashboard</a></li>
-          <li><a href="#blog" onClick={() => setOpen(false)}>Blog</a></li>
-          <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
+          <li><a href="#projects" onClick={() => setOpen(false)}>projects</a></li>
+          <li><a href="#skills" onClick={() => setOpen(false)}>skills</a></li>
+          <li><a href="#contact" onClick={() => setOpen(false)}>contact</a></li>
         </ul>
 
           
